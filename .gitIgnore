@@ -1,0 +1,6 @@
+git init
+git checkout -b main
+git remote add origin https://github.com/imrohitkr24/Node-app
+git add .
+git commit -m "Write dockerfile and .gitIgnore"
+git push -u origin main 
