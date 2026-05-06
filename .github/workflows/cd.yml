@@ -16,6 +16,8 @@ jobs:
                 host: ${{secrets.EC2_HOST}}
                 username: ${{secrets.EC2_USERNAME}}
                 key: ${{secrets.EC2_KEY}}
+                port: 22
+                strict_host_key_checking: false
                 script: | 
                    docker pull imrohitkr24/node-app:latest
                    docker rm -f node-app || true
